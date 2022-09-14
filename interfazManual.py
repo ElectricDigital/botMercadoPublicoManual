@@ -53,24 +53,8 @@ def interf():
     url.pack()
     Label(pantalla).pack()
 
-#INSERTA NOMBRE DEL RESPONSABLE
-    Label(text="SELECCIONE RESPONSABLE LICITACION", bg="#26CBA9",
-          fg="black", width="36", height="1", font=("calibri", 15)).pack()
-    Label(text="").pack()
-    global respons
-    respons = StringVar()
-
-# CREO LA LISTA Y EL MENU DESPLEGABLE
-    OptionList = [" ", "Martin Chacon", "Gerko Marfull"]
-    OptionList.sort()
+    global responsable
     global variable
-    variable = tk.StringVar(pantalla)
-    variable.set(OptionList[0])
-    opt = tk.OptionMenu(pantalla, variable, *OptionList)
-    opt.config(width=33, font=('calibri', 15), background='White')
-    opt.pack()
-    opt = tk.OptionMenu(pantalla, variable, *OptionList)
-    Label(text="").pack
 
     #BOTON COPIAR AL PORTAPELES// NUEVAS FUNCIONES AGREGARLAS ARRIBA DE ESTE MODULO
     Button(pantalla, text="Enviar", command=copy, padx=155, pady=10,
@@ -141,7 +125,7 @@ def copy():
 
     #EL ID DE LA HOJA DE CALCULO, ESTE SE PUEDE ENCONTRAR EN EL LINK DE LA HOJA DE CALCULO, entre "d/" y "/edit"
     #EJEMPLO: https://docs.google.com/spreadsheets/d/  --->1DatQ3q5h6xrtRDnOM3MhRWCDgbtVACy2FeZAxIqNbzY<---   /edit#gid=147158629
-    spreadsheet_id = '10zw5w9fNuFHVJCZJFmORLsbFSxY2eqz2WIY9ajE3Ffw'
+    spreadsheet_id = '1umHVdhFQ3Br06yj5JzWPTothXf9C1PcrVTPGrdeKcwk'
     sheet_id = '147158629'
 
     def ejecutar():
