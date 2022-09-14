@@ -60,8 +60,6 @@ def interf():
     Button(pantalla, text="Enviar", command=copy, padx=155, pady=10,
            background='red', font=("calibri", 15)).pack(side=tk.BOTTOM)
     pantalla.mainloop()
-    global nombre_asignado
-    nombre_asignado = variable.get()
 
 
 def validacion(idLicitacion):
