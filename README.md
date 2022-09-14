@@ -1,0 +1,2 @@
+# botMercadoPublicoManual
+Bot Manual Validator
